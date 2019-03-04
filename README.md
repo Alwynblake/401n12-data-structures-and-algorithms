@@ -14,4 +14,4 @@ Each node should contain "value" -> "next"
 The BigO is O(n)
 
 ## Solution
-assets/code_challenge7.jpg
+assets/ll_kth_from_end.jpg

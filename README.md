@@ -1,16 +1,16 @@
-# 401n12-data-structures-and-algorithms
+# kth from the end of a Linked List
 data-structures-and-algorithms
-# Linked List Insertions
-<!-- short summary -->
+
 
 ## Challenge
-Write the following methods for the Linked List class:
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
-.append(value) which adds a new node with the given value to the end of the list
-.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
-.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
 ## Approach & Efficiency
-<!-- What approach did you take? Why?What is the BigO? -->
+create a method that accepts a singly link list
+iterate through the link list with a current node
+Each node should contain "value" -> "next"
+
+The BigO is O(n)
 
 ## Solution
-assets/ll_insertions.jpg
+assets/code_challenge7.jpg

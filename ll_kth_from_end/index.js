@@ -12,14 +12,14 @@ class LinkedList {
 
   append(value) {
 
-    if(!this.head) {
+    if (!this.head) {
       this.head = new Node(value);
       return;
     }
 
     let current = this.head;
     // while there is a next value set that value of current to current.next
-    while(current.next) {
+    while (current.next) {
       current = current.next;
     }
     current.next = new Node(value);
@@ -27,28 +27,29 @@ class LinkedList {
 
   kthFromEnd(k) {
 
-    let counter = 0;
+    let counter = 1;
     let current = this.head;
 
-    while(curren.next) {
+    while (current.next) {
       current = current.next;
       counter++;
     }
 
     let positionOfK = counter - k;
 
-    if(positionOfK === 0) {
-      return this.head;
-      else if (positionOfK < 0) {
-        return null;
-      } else {
-        counter = 0;
-        current = this.head;
-        while (counter < positionOfK) {
-          current = current.next;
-          counter++;
-        }
+    if (positionOfK === 0) {
+      return this.head.value;
+    } else if (positionOfK < 0) {
+      return 'k is too large a number';
+    } else {
+      counter = 0;
+      current = this.head;
+
+      while (counter < positionOfK) {
+        current = current.next;
+        counter++;
       }
+      return current.value;
     }
   }
 }

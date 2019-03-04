@@ -24,6 +24,37 @@ describe('Testing LinkedList data structure', () => {
     expect(linkedList.head.next.next.value).toEqual(3);
     expect(linkedList.head.next.next.next.value).toEqual(2);
     expect(linkedList.head.next.next.next.next.value).toEqual(1);
+  });
 
+  test('Test that LinkedList kthFromEnd() returns the head node value when k is the length of the LL', () => {
+    const linkedList = new LinkedList();
+    linkedList.append(1);
+    linkedList.append(2);
+    linkedList.append(3);
+    linkedList.append(4);
+    linkedList.append(5);
+    expect(linkedList.kthFromEnd(5)).toEqual(1);
+  });
+  test('Testing that LinkedList kthFromEnd() method returns the correct node value', () => {
+    const linkedList = new LinkedList();
+    linkedList.append(1);
+    linkedList.append(2);
+    linkedList.append(3);
+    linkedList.append(4);
+    linkedList.append(5);
+    expect(linkedList.kthFromEnd(2)).toEqual(4);
+    expect(linkedList.kthFromEnd(3)).toEqual(3);
+    expect(linkedList.kthFromEnd(4)).toEqual(2);
+    expect(linkedList.kthFromEnd(1)).toEqual(5);
+  });
+
+  test('Testing that LinkedList kthFromEnd() method returns the message that k is longer than the linkedlist if it is longer', () => {
+    const linkedList = new LinkedList();
+    linkedList.append(1);
+    linkedList.append(2);
+    linkedList.append(3);
+    linkedList.append(4);
+    linkedList.append(5);
+    expect(linkedList.kthFromEnd(6)).toEqual('k is too large a number');
   });
 });

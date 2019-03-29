@@ -3,4 +3,4 @@
 const Node = require('./lib/node');
 
 //  ***************
-class  linklistmerge ( n1, n2) {
+class  mergeLists ( n1, n2) {

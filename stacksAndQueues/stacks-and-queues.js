@@ -22,13 +22,19 @@ class Stack {
 
 class Queue {
   constructor() {
-    this.items = [];
-  }
-  front() {
-    if(this.isEmpty())return this.items[0];
-  }
-
-  isEmpty() {
-    return false;
+    this.front= [];
   }
 }
+
+// class Queue {
+//   constructor() {
+//     this.items = [];
+//   }
+//   front() {
+//     if(this.isEmpty())return this.items[0];
+//   }
+//
+//   isEmpty() {
+//     return false;
+//   }
+// }

@@ -22,6 +22,13 @@ class Stack {
 
 class Queue {
   constructor() {
-    this.front= [];
+    this.items = [];
+  }
+  front() {
+    if(this.isEmpty())return this.items[0];
+  }
+
+  isEmpty() {
+    return false;
   }
 }

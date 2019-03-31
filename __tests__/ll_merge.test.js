@@ -21,4 +21,15 @@ describe('testing ll_merge method', () => {
     expect(zippedList.next.next.next.next.next.value).toEqual(6);
     expect(zippedList.next.next.next.next.next.next).toEqual(null);
   });
+
+  test('testing that ll_merge method throws a TypeError if linkedList1 is not an object', () => {
+    let ll1 = 'hello';
+    let ll2 = new LinkedList();
+    ll2.append(2);
+    ll2.append(4);
+    ll2.append(6);
+    expect(() => {
+      new LinkedList().mergeLists(ll1, ll2);
+    }).toThrow();
+  });
 });

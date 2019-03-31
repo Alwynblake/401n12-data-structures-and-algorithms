@@ -23,6 +23,13 @@ class LinkedList {
   }
 
   mergeLists(linkedList1, linkedList2) {
+    if (typeof linkedList1 !== 'object') {
+      throw new TypeError('__TypeError__: linkedList1 should be an object');
+    }
+
+    if (typeof linkedList2 !== 'object') {
+      throw new TypeError('__TypeError__: linkedList2 should be an object');
+    }
 
     let current1 = linkedList1.head;
     let current2 = linkedList2.head;

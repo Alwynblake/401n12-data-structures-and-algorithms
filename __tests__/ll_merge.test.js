@@ -23,11 +23,22 @@ describe('testing ll_merge method', () => {
   });
 
   test('testing that ll_merge method throws a TypeError if linkedList1 is not an object', () => {
-    let ll1 = 'hello';
+    let ll1 = 'linkedList1 is not a valid data type';
     let ll2 = new LinkedList();
     ll2.append(2);
     ll2.append(4);
     ll2.append(6);
+    expect(() => {
+      new LinkedList().mergeLists(ll1, ll2);
+    }).toThrow();
+  });
+
+  test('testing that ll_merge method throws a TypeError if linkedList2 is not an object', () => {
+    let ll1 = new LinkedList();
+    let ll2 = 'linkedList2 is not a valid data type';
+    ll1.append(1);
+    ll1.append(3);
+    ll1.append(5);
     expect(() => {
       new LinkedList().mergeLists(ll1, ll2);
     }).toThrow();

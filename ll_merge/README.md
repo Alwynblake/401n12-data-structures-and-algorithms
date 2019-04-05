@@ -13,7 +13,9 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 4. create a 3rd instance containing the combined linkedLists
 5. return the reference to the new head
 
-The BigO is O(1)
+## BigO
+* time: O(1)
+* space: O(n)
 
 ## Solution
-assets/ll_kth_from_end.jpg
+assets/ll_merge.jpg

@@ -5,7 +5,7 @@ const PseudoQueue = (root) => {
   const queue = [];
   queue.push(root);
 
-  while(queue.length > 0) {
+  while (queue.length > 0) {
 
     const current = queue.shift();
 
@@ -17,7 +17,9 @@ const PseudoQueue = (root) => {
       queue.push(current.right);
   }
 };
-PseudoQueue(tree.root);
+
+module.exports = PseudoQueue;
+// PseudoQueue(tree.root);
 
 
 // class LinkedList {

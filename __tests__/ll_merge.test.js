@@ -1,6 +1,6 @@
 'use strict';
 
-const LinkedList  = require('../ll_merge/index.js');
+const LinkedList = require('../ll_merge/index.js');
 
 describe('testing ll_merge method', () => {
   test('testing that ll_merge method zips together 2 linkedLists', () => {

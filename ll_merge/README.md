@@ -14,8 +14,8 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 5. return the reference to the new head
 
 ## BigO
-* time: O(1)
-* space: O(n)
+* time:O(n)
+* space: O(1)
 
 ## Solution
-assets/ll_merge.jpg
+assets/ll_merge.JPG

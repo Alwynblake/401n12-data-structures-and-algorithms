@@ -18,5 +18,6 @@ The Stack instances have only push, pop, and peek methods.
 
 
 ## Solution
-assets/queue_with_stacks.jpg
+
+assets/QueueWithStacks.jpg
 

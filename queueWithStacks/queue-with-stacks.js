@@ -19,10 +19,3 @@ const PseudoQueue = (root) => {
 };
 
 module.exports = PseudoQueue;
-// PseudoQueue(tree.root);
-
-
-// class LinkedList {
-//   constructor() {
-//     this.head = null;
-//   }

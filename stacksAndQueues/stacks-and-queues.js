@@ -32,3 +32,5 @@ class Queue {
     return false;
   }
 }
+
+module.exports = Queue;

@@ -19,25 +19,3 @@ const Node = require('./lib/node');
 }
 
 module.exports = findmaxvalue;
-
-
-
-
-
-/////////
-// class BST {
-//   constructor(value) {
-//     this.root = new Node(value);
-//     this.count = 1
-//   }
-//
-//   findmaxvalue() {
-//     let currentNode = this.root;
-// // continue to traverse right, until no more children
-//     while (currentNode.right) {
-//       currentNode = currentNode.right
-//     }
-//
-//     return currentNode.value
-//   }
-// }

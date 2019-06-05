@@ -1,17 +1,20 @@
 'use strict';
-const Node = require('./lib/node');
 
-psuedoEnqueue(Node);
-{
-  stack1.push(Node);
-}
-psuedoDequeue();
-{
-  while(stack1.peek) {
-    stack2.push(stack1.pop());
+const PseudoQueue = (root) => {
+  const queue = [];
+  queue.push(root);
+
+  while (queue.length > 0) {
+
+    const current = queue.shift();
+
+    console.log(current.value);
+
+    if (current.left)
+      queue.push(current.left);
+    if (current.right)
+      queue.push(current.right);
   }
-  let temp = stack2.pop();
-  while(stack2.peek()){
-    stack1.push(stack2.pop());
-  }
-}
+};
+
+module.exports = PseudoQueue;

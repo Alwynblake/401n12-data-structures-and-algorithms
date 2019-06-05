@@ -11,7 +11,7 @@ class Stack {
     return this.top.push(new Node(value));
   }
   pop() {
-    const pop  = this.top;
+    const pop = this.top;
     this.top = this.top.next;
     return pop;
   }
@@ -20,12 +20,14 @@ class Stack {
   }
 }
 
+module.exports = Stack;
+
 class Queue {
   constructor() {
     this.items = [];
   }
   front() {
-    if(this.isEmpty())return this.items[0];
+    if (this.isEmpty()) return this.items[0];
   }
 
   isEmpty() {

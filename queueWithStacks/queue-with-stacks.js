@@ -1,22 +1,18 @@
 'use strict';
 
-
-const PseudoQueue = (root) => {
-  const queue = [];
-  queue.push(root);
-
-  while (queue.length > 0) {
-
-    const current = queue.shift();
-
-    console.log(current.value);
-
-    if (current.left)
-      queue.push(current.left);
-    if (current.right)
-      queue.push(current.right);
+const PseudoQueue = (node) => {
+  stack1.push(node);
+}
+pseudoDequeue (){
+  while(stack1.peek) {
+    stack2.push(stack1.pop());
   }
-};
-
+  let temp = stack2.pop();
+  while(stack2.peek()){
+    stack1.push(stack2.pop());
+  }
+}
 module.exports = PseudoQueue;
+
+
 

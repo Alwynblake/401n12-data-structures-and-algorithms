@@ -19,5 +19,5 @@ The Stack instances have only push, pop, and peek methods.
 
 ## Solution
 
-assets/QueueWithStacks.jpg
+![](../assets/QueueWithStacks.JPG)
 

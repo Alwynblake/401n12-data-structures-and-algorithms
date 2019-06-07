@@ -18,4 +18,4 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 * space: O(1)
 
 ## Solution
-assets/ll_merge.JPG
+![ll_merge image](../assets/ll_merge.JPG)

@@ -13,4 +13,5 @@ data-structures-and-algorithms
 * The BigO is O(n)
 
 ## Solution
-assets/breadthFirst.jpg
+![](../assets/breadthFirst.JPG)
+

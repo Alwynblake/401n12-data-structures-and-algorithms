@@ -1,38 +1,23 @@
 'use strict';
 
-const Node = require('./lib/node');
+const PseudoQueue = (root) => {
+  const queue = [];
+  queue.push(root);
 
-class Stack {
-  constructor() {
-    this.top = [];
-  }
+  while (queue.length > 0) {
 
-  push(value) {
-    return this.top.push(new Node(value));
-  }
-  pop() {
-    const pop = this.top;
-    this.top = this.top.next;
-    return pop;
-  }
-  peek() {
-    return this.top;
-  }
-}
+    const current = queue.shift();
 
-module.exports = Stack;
+    console.log(current.value);
 
-class Queue {
-  constructor() {
-    this.items = [];
+    if (current.left)
+      queue.push(current.left);
+    if (current.right)
+      queue.push(current.right);
   }
-  front() {
-    if (this.isEmpty()) return this.items[0];
-  }
+};
 
-  isEmpty() {
-    return false;
-  }
-}
+module.exports = PseudoQueue;
 
-module.exports = Queue;
+
+

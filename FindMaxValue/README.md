@@ -12,3 +12,4 @@ data-structures-and-algorithms
 
 
 ## Solution
+![](../assets/FindMaxValue.JPG)

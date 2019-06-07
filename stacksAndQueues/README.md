@@ -23,3 +23,6 @@ Each node should contain "value" -> "next"
 * The BigO is O(n)
 
 
+## Solution
+
+![](../assets/QueueWithStacks.JPG)
